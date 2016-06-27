@@ -8,6 +8,18 @@ $fb = new Facebook\Facebook([
   'default_graph_version' => 'v2.5'
 ]);
 
+
+$helper = $fb->getRedirectLoginHelper();
+$permissions = ['email']; // Optional permissions
+$loginUrl = $helper->getLoginUrl('fb-callback.php', $permissions);
+
+echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
+
+
+
+
+
+
 $linkData = [
   'link' => 'http://www.example.com',
   'message' => 'User provided message',
