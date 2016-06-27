@@ -15,7 +15,7 @@ $linkData = [
 
 try {
   // Returns a `Facebook\FacebookResponse` object
-  $response = $fb->post('/me/feed', $linkData, '{access-token}');
+  $response = $fb->post('/me/feed', $linkData, '{3f179db54a9bf1b1713d69fa539dc2d3}');
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
   echo 'Graph returned an error: ' . $e->getMessage();
   exit;
