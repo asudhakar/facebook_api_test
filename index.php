@@ -14,7 +14,7 @@ $request = new FacebookRequest(
   'POST',
   '/250674131760799/members',
   array (
-    'member' => '1',
+    'member' => '1'
   )
 );
 $response = $request->execute();
